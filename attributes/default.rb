@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 case node['platform']
-when "redhat","centos","scientific","amazon"
+when "redhat","centos","scientific","amazon", "fedora"
   default['readline']['packages'] = [ "readline", "readline-devel" ]
 when "debian","ubuntu"
   default['readline']['packages'] = [ "libreadline-dev", "libreadline5" ]
